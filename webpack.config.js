@@ -39,6 +39,10 @@ const config = {
         test: /(\.jsx|\.js)$/,
         loader: 'eslint-loader',
         exclude: /node_modules/
+      },
+      {
+        test: /\.css$/,
+        loader: ['style-loader', 'css-loader']
       }
     ]
   },
